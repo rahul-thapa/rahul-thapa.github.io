@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Sacramento&display=swap&subset=latin-ext');
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    
+}
+
+.particles-js-canvas-el{
+    width: 100vh;
+    height:100vh;
+    position: absolute;
+    pointer-events: none;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+.menu{
+    float: right;
+}
+
+#logo{
+    font-size: 22px;
+    font-family: 'Sacramento', cursive;
+    line-height: 0.2px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+.headlist{
+    position:auto;
+}
+.main{
+    background-color: #2099d2;
+    color: #f9f9f9;
+    height:100vh;
+    
+}
+.menuList{
+    font-size: 20px;
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 5px;
+    border: 2px solid transparent ;
+}
+.nameHead{
+    margin: 10px;
+    padding: 10px;
+}
+.headContent{
+    text-align: center;
+    margin-top: 20vh;
+    padding: 15px 5px;
+}
+.arrow{
+    margin-top: 90px;
+}
+.arrow a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 14px;
+    text-decoration: none;
+}
+.arrow a:hover{
+    color:#082e45;
+    transition: ease 0.6s;
+}
+
+.contentDown{
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+}
+.skillitems{
+    list-style: none;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.cont{
+    
+    color: #2099d2;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    margin: 30px;
+    padding: 5px;
+}
+
+.techHead{
+    color: #082e45;
+    opacity: 70%;
+    border-bottom: 4px solid #2099d2;
+    padding:0px;
+}
+
+.vl {
+    border-left: 6px solid #2099d2;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 100vh;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.menu li a:hover{
+transition: ease 0.6s;
+color: #082e45;
+}
+
+.wrapper2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+.insideHeads{
+    color: #082e45;
+    border-bottom: 2px solid #2099d2;
+    border-bottom-width: 5px;
+    margin: 10px 0px;
+}
+.aboutContent{
+    margin: 10px 0px;
+    padding: 5px 0px;
+}
+.mouseEvents{
+    pointer-events: all !important;
+}
+#section2{
+    height: 60vh;
+}
+#section3{
+    background-color: #2099d2;
+    text-align: center;
+    height: 50vh;
+    color: white;
+}
+#section3 h2{
+    padding: 10px;
+    top:-50vh;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
