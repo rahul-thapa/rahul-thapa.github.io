@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Major+Mono+Display&display=swap');
+
+
+.mainHeader{
+    text-align: center;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    color: #27a844;
+    text-shadow: 2px 2px #2e3337;
+    font-family: 'Major Mono Display', monospace;
+}
+body{
+    background-color: #2e3337;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main{
+    border: 0.5px solid lightslategray;
+    border-radius: 5px;
+    background-color: #353a40;
+    color:#27a844;
+}
+.main h2{
+    color: #27a844;
+    font-family: 'Major Mono Display', monospace;
+}
+.submitBtn{
+    margin-top: 5px;
+}
+.form-control{
+    border-color: #27a844;
+    margin-bottom: 5px;
+}
+.list{
+    list-style: none;
+    text-align: left;
+}
+.listItems{
+    margin-left: -40px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.listItems:hover{
+    background-color: #27a844;
+    color: white;
+}
