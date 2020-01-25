@@ -196,6 +196,85 @@ color: #082e45;
     
 }
 
+.github-buttons{
+    background-color:#2099d2;
+    color: white;
+}
+.live-buttons{
+    background-color:#e74889;
+    color: white;
+}
+
+.project-buttons:hover{
+    opacity: 0.7;
+    transition: ease 0.6s;
+}
+
 .projectContent{
     padding: 20px 10px;
+}
+
+#section4{
+    background-color: #0a1930;
+    text-align: center;
+    height: 80vh;
+    color: white;
+}
+#section4 p{
+    opacity: 0.5;
+}
+#contactHeader{
+    opacity: 0.7;
+    font-size: 4rem;
+    padding: 12rem 0rem 1rem 0rem;
+}
+
+#dev{
+    height: 20vh;
+    text-align: center;
+    text-decoration: none;
+    background-color: #082e45;
+    padding: 7vh;
+}
+
+#devLink{
+    text-decoration: none;
+    color: #7af2de;
+    font-size: 18px;
+}
+#devLink:hover{
+    opacity: 0.3;
+    transition: ease 0.6s;
+}
+
+#mail{
+    text-decoration: none;
+    border: 2px solid #7af2de;
+    border-radius: 5%;
+    padding: 15px;
+    margin-bottom: 1rem;
+    color: #7af2de;
+    
+}
+#mail:hover{
+    opacity: 0.5;
+    transition: ease 0.6s;
+}
+.contactContent{
+    margin-bottom: 5rem;
+    font-size: 18px;
+}
+
+#socialContainer{
+    font-size: 30px;
+}
+#socialContainer a{
+    color: #7af2de;
+    margin-right: 1rem;
+    opacity: 0.9;
+}
+
+#socialContainer a:hover{
+    opacity: 0.3;
+    transition: ease 0.6s;
 }
