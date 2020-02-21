@@ -174,7 +174,7 @@ color: #082e45;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     padding: 60px 200px;
-    grid-template-rows: minmax(365px, 365px);
+    grid-template-rows: minmax(373px, 373px);
     
 }
 
