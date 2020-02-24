@@ -2,7 +2,7 @@ document.getElementById("getdata").addEventListener("click", getiss)
 
 function getiss(){
     
-    fetch("https://api.open-notify.org/iss-now.json")
+    fetch("http://api.open-notify.org/iss-now.json")
     .then((res) => res.json())
     .then((data) =>{
 
