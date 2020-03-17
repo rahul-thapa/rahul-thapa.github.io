@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7186ece4b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
@@ -35,7 +36,7 @@
     </header>
     <div id="section2" class="wrapper">
             
-        <div class="cont">
+        <div class="cont grid-item">
             
             <ul>
                 <li class="skillitems"><h2 class="techHead">Technologies that I work with</h2></li>
@@ -74,19 +75,19 @@
         </div>
         
     
-        <div class="cont">
+        <div class="cont grid-item">
             <h2 class="techHead">About Me</h2>
             <p class="aboutContent">I am a <span style="color:#082e45;">Computer Science</span> student from India currently in
                  my second year at <span style="color:#082e45;">Assam Engineering College</span>. 
                 I develop and design professional quality websites and I specialize in development with react.<br>
-                I have been developing websites for the past 6 months. I mainly work with React and Nodejs for backend.</p>
-                <a href="https://rahul-thapa.github.io/my-resume.pdf" target="_blank"><button class="btn github-buttons project-buttons" >View My Resume</button></a>
+                I have been developing websites for the past 6 months.</p>
+            <a href="https://rahul-thapa.github.io/my-resume.pdf" target="_blank"><button class=" res btn github-buttons project-buttons" >View My Resume</button></a>
         </div>
     </div>
     <div id="section3" class="projects">
         <h2 style="color:white; background-color: #082e45; opacity: 0.8;">Projects that I have worked on</h2>
         
-        <div class="projects-wrapper">
+        <!-- <div class="projects-wrapper">
             <div class="innerProjects">
                 <h3>1. To-Do List</h3>
                
@@ -105,10 +106,43 @@
             </div>
 
 
+        </div> -->
+        <div class="container">
+            <div class="card-deck projects-wrapper">
+                <div class="card innerProjects col-sm-4">
+                  <div class="card-body">
+                    <h3 class="card-title">1. To-Do List</h3>
+                    <p class="card-text projectContent">Built a simple to-do list application using HTML, CSS and JavaScript. This is my very first 
+                        project with JS.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="http://github.com/rahul-thapa/todolist" target="_blank"><button class="btn github-buttons project-buttons" >View on GitHub</button></a><a href="http://rahul-thapa.github.io/todolist" target="_blank"><button class="btn project-buttons live-buttons" >View Live</button></a> 
+                    <p class="techstack text-muted" >HTML CSS JavaScript</p>
+                  </div>
+                </div>
+                <div class="card innerProjects col-md-4">
+                  <div class="card-body">
+                    <h3 class="card-title">2. ISS tracker</h3>
+                    <p class="card-text projectContent">This tool fetches data from the open-notify API to get the co-ordinates of the international space station in realtime. Those co-ordinates are sent to the locationiq API to perform reverse geocoding and the result is visualised on a static map.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://github.com/rahul-thapa/rahul-thapa.github.io/tree/master/iss-tracker" target="_blank"><button class="btn github-buttons project-buttons" >View on GitHub</button></a><a href="http://rahul-thapa.github.io/iss-tracker" target="_blank"><button class="btn project-buttons live-buttons" >View Live</button></a> 
+                        <p class="techstack text-muted" >HTML CSS JavaScript FetchAPI</p>
+                    </div>
+                </div>
+                <!-- <div class="card innerProjects">
+                  <div class="card-body">
+                    <h3 class="card-title">Card title</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </div>
+                </div> -->
+              </div>
         </div>
         
-        
-
 
     </div>
     <div id="section4" class="contact">

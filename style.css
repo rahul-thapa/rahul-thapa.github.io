@@ -57,7 +57,7 @@ body{
     padding: 15px 5px;
 }
 .arrow{
-    margin-top: 90px;
+    margin-top: 70px;
 }
 .arrow a{
     text-decoration: none;
@@ -92,25 +92,31 @@ body{
 
 .techHead{
     color: #082e45;
-    opacity: 70%;
     border-bottom: 4px solid #2099d2;
     padding:0px;
 }
 
-.vl {
+/* .vl {
     border-left: 6px solid #2099d2;
     height: 60vh;
     position: absolute;
     left: 50%;
     margin-left: -3px;
     top: 100vh;
-}
+} */
 
 .wrapper{
     display: grid;
     grid-template-columns:1fr 1fr ;
+    grid-gap: 10px;
+    background-color: #2099d2;
 }
+.grid-item{
+    background-color: #f9f9f9;
+    margin: 0px;
+    padding: 10px;
 
+}
 .menu li a{
     text-decoration: none;
     color: white;
@@ -171,16 +177,18 @@ color: #082e45;
 }
 
 .projects-wrapper{
-    display: grid;
+    padding: 40px;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     padding: 60px 200px;
-    grid-template-rows: minmax(365px, 365px);
+    /* grid-template-rows: minmax(365px, 365px); */
     
+ */
+
 }
-
-
 .innerProjects{
+
     border-radius: 6px;
     padding-left: 5px;
     background-color: #162a45;
@@ -189,8 +197,9 @@ color: #082e45;
 }
 
 .innerProjects h3{
-    padding-top: 40px;
+    padding-top: 10px;
     color: white;
+    opacity: 0.8;
 }
 .innerProjects button{
 
@@ -198,7 +207,9 @@ color: #082e45;
     padding: 5px;
     
 }
-
+.card{
+    border: none;
+}
 
 .github-buttons{
     background-color:#2099d2;
@@ -215,13 +226,27 @@ color: #082e45;
 }
 
 .projectContent{
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
     opacity: 0.9;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
     text-justify: auto;
+}
+
+.card-footer{
+    border: none;
+}
+.techstack{
+    color: white;
+
+    text-align: right;
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 #section4{
@@ -287,4 +312,140 @@ color: #082e45;
 #socialContainer a:hover{
     opacity: 0.3;
     transition: ease 0.6s;
+}
+
+@media all and (max-width: 768px) {
+
+    #section1{
+        min-height: fit-content;
+    }
+    #logo{
+        display: none;
+    }
+    .headlist{
+        padding-top: 40px;
+    }
+    .menuList{
+        font-size: 18px;
+        margin: auto;
+        padding: 2px;
+    }
+    
+    .headContent{
+        margin: 180px 5px;
+        padding: 20px;
+    }
+    .headContent h2{
+        font-size: 18px;
+        padding: 5px 1px;
+    }
+    .contentDown{
+        font-size: 18px;
+    }
+    .nameHead{
+        font-size: 44px;
+    }
+
+    .arrow a{
+        font-size: 14px;
+    }
+
+    /* SECTION 2 */
+
+    #section2{
+        height: fit-content;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+    
+    .vl{
+        display: none;
+    }
+
+    .cont{
+    
+        color: #2099d2;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        
+        padding: 10px;
+    }
+    .res{
+        font-size: 24px;
+    }
+
+    .wrapper2{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .techHead{
+        padding-top: 30px;
+        font-size: 24px;
+    }
+    .insideHeads{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    .aboutContent{
+        padding: 10px 0px;
+    }
+
+    /* SECTION 3 */
+
+    #section3{
+        height: fit-content;
+    }
+    .projects-wrapper{
+        padding: 4px;
+    }
+    #section3 h2{
+        padding: 30px 0px;
+        margin: 30px 0px;
+        font-size: 24px;
+        height: fit-content;
+    }
+    .card-deck .card {
+        min-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .innerProjects h3{
+        font-size: 18px;
+    }
+
+    .projectContent{
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    /* SECTION 4 */
+    #section4{
+        height: fit-content;
+        padding-bottom: 30px;
+
+    }
+
+    #contactHeader{
+        font-size: 44px;
+        margin-bottom: 0px;
+        
+    }
+    #contactContent{
+        font-size: 18px;
+        margin-bottom: 2rem ;
+
+    }
+    #mail{
+        margin-bottom: 5rem;
+    }
+    #dev{
+        height: fit-content;
+        padding: 18px;
+    }
+
 }
