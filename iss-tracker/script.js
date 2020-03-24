@@ -11,7 +11,7 @@ function getiss(){
         let output = ""
         output += `
             <p>Latitude: ${data.iss_position.latitude} Longitude: ${data.iss_position.longitude}</p>
-            <img id="map" src='https://maps.locationiq.com/v2/staticmap?key=pk.ff67f232b80b13ea94296e55d23d6265&size=720x480&center=0,0&zoom=0&markers=icon:small-red-cutout|${lat},${longi}'/>
+            <img id="map" src='https://maps.locationiq.com/v2/staticmap?key=pk.ff67f232b80b13ea94296e55d23d6265&size=600x360&center=0,0&zoom=0&markers=icon:small-red-cutout|${lat},${longi}'/>
             
         `
         revGeo(lat, longi)
