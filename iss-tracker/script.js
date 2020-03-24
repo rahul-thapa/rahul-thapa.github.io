@@ -2,21 +2,22 @@ document.getElementById("getdata").addEventListener("click", getiss)
 
 function getiss(){
     
-    fetch("http://api.open-notify.org/iss-now.json")
+    fetch("https://api.wheretheiss.at/v1/satellites/25544")
     .then((res) => res.json())
     .then((data) =>{
 
-        let lat = data.iss_position.latitude
-        let longi = data.iss_position.longitude
+        let lat = data.latitude
+        let longi = data.longitude
         let output = ""
         output += `
-            <p>Latitude: ${data.iss_position.latitude} Longitude: ${data.iss_position.longitude}</p>
+            <p>Latitude: ${lat} Longitude: ${longi}</p>
             <img id="map" src='https://maps.locationiq.com/v2/staticmap?key=pk.ff67f232b80b13ea94296e55d23d6265&size=600x360&center=0,0&zoom=0&markers=icon:small-red-cutout|${lat},${longi}'/>
             
         `
         revGeo(lat, longi)
         document.getElementById("location").innerHTML = output
-        console.log(data)
+       console.log(data)
+
 
     })
 }
