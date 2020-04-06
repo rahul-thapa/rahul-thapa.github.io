@@ -144,13 +144,16 @@ color: #082e45;
 .mouseEvents{
     pointer-events: all !important;
 }
+#section1{
+    min-height: fit-content;
+}
 #section2{
     height: 60vh;
 }
 #section3{
     background-color: #0a1930;
     text-align: center;
-    height: 100vh;
+    height: fit-content;
     color: white;
 }
 #section3 h2{
@@ -192,19 +195,19 @@ color: #082e45;
     border-radius: 6px;
     padding-left: 5px;
     background-color: #162a45;
-    color: #7af2de;
-
+    
 }
 
 .innerProjects h3{
     padding-top: 10px;
-    color: white;
-    opacity: 0.8;
+    color: #c9d4f4;
+    
 }
 .innerProjects button{
 
     margin: 10px 5px;
     padding: 5px;
+    
     
 }
 .card{
@@ -227,12 +230,13 @@ color: #082e45;
 
 .projectContent{
     /* padding: 15px 20px; */
-    opacity: 0.9;
+    opacity: 0.8;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 15px;
     text-align: justify;
     text-justify: auto;
+    color: #c9d4f4;
 }
 
 .card-footer{
