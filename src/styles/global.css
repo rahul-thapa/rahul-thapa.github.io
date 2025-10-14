@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Cyberpunk Logo Font */
+@font-face {
+  font-family: Cyberpunk;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/src/assets/Cyberpunk-Regular.ttf") format("truetype");
+}
+
+/* Cyberpunk Text Font */
+@font-face {
+  font-family: Rajdhani Medium;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/src/assets/Rajdhani-Medium.ttf.woff") format("woff");
+}
+
+@theme {
+  --font-cyberpunk: "Cyberpunk", sans-serif;
+  --font-rajdhani: "Rajdhani Medium", sans-serif;
+
+  --color-cyber-green: #4bff21;
+  --color-cyber-black: #050a0e;
+  --color-cyber-yellow: #fcee09;
+  --color-cyber-red: #ff003c;
+  --color-cyber-cyan: #00f0ff;
+  --color-cyber-white: #fafafa;
+}
+
+@layer utilities {
+  @keyframes glitch {
+    0% {
+      text-shadow: 2px 0 red, -2px 0 cyan;
+    }
+    25% {
+      text-shadow: -2px 0 magenta, 2px 0 cyan;
+    }
+    50% {
+      text-shadow: 2px 0 blue, -2px 0 lime;
+    }
+    75% {
+      text-shadow: -2px 0 magenta, 2px 0 cyan;
+    }
+    100% {
+      text-shadow: 2px 0 red, -2px 0 cyan;
+    }
+  }
+
+  .glitch {
+    animation: glitch 0.3s forwards ease-in-out;
+  }
+
+  @keyframes scanlines {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -10px;
+    }
+  }
+  .crt {
+    position: relative;
+    background: repeating-linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.2) 0px,
+        /* dark line */ rgba(0, 0, 0, 0.6) 1px,
+        rgba(255, 255, 255, 0.05) 2px /* faint highlight line */
+      ),
+      linear-gradient(to top right in oklab, #000000, #311028, #581b14); /* your base gradient */
+    background-size: 100% 2px; /* slightly bigger spacing */
+    animation: scanlines 55s infinite;
+    mix-blend-mode: multiply;
+  }
+}
